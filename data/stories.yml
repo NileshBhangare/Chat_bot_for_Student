@@ -1,0 +1,69 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Transcript
+  steps:
+    - intent: Transcript
+    - action: utter_transcript
+
+- story: bona-fide
+  steps:
+    - intent: request_bonafide
+    - action: utter_bonafide
+
+- story: register exam-form
+  steps:
+    - intent: register_exam_form
+    - action: utter_exam_form
+
+- story: scholarship_form
+  steps:
+    - intent: apply_scholarship_form
+    - action: utter_scholarship_form
+
+- story: paper_rechecking
+  steps:
+    - intent: request_paper_rechecking
+    - action: utter_paper_rechecking
+
+- story: new_id
+  steps:
+    - intent: new_id-card
+    - action: utter_id
+
+- story:
+  steps:
+    - intent: Reporting
+    - action: utter_reporting
+
+
+
+

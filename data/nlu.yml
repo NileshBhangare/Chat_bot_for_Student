@@ -1,0 +1,160 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - good morning
+    - good evening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremely sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: Transcript
+  examples: |
+    
+    - I want Transcript
+    - Transcript
+    - how to apply for Transcript
+    - how to get Transcript
+    - Transcript Application
+    - Transcript Generate
+    - where to get Transcript
+
+- intent: request_bonafide
+  examples: |
+    - Can I get a bonafide certificate?
+    - How can I apply for a bonafide?
+    - I need a bonafide for my application
+    - Request for bonafide document
+    - What is the process to obtain a bonafide?
+    - bonafide
+
+- intent: register_exam_form
+  examples: |
+    - How do I register for the exam?
+    - I want to sign up for the exam
+    - Register for the upcoming exam
+    - What is the process for exam form registration?
+    - How can I enroll for the exam?
+    - Where can I fill out the exam form? 
+   
+
+- intent: apply_scholarship_form
+  examples: |
+    - How do I apply for a scholarship?
+    - I want to fill out the scholarship form
+    - Apply for a scholarship
+    - What is the process for scholarship application?
+    - Can you guide me through the scholarship form?
+    - Where can I find the scholarship application?
+
+- intent: request_paper_rechecking
+  examples: |
+    - I want to request a recheck of my exam paper
+    - Can you help me with paper reevaluation?
+    - Request for rechecking my paper
+    - How do I apply for a paper reevaluation?
+    - I need my exam paper to be rechecked
+    - What is the process for paper rechecking?
+
+- intent: new_id-card
+  examples: |
+    - how to get new id?
+    - how renew id-card
+    - new id_card
+    - how to apply for id-card
+    - what is process of get new id-card
+    - how to get new id-card
+    - what to issue a black id-card?
+    - is id_card and black ID same?
+
+- intent: Reporting
+  examples: |
+    - how to do reporting?
+    - reporting?
+    - where is to reporting?
+    - what is needed for reporting?
+    - what is presses of reporting?
+    - can reporting done online?
+  

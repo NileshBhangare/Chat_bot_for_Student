@@ -1,0 +1,66 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - Transcript
+  - request_bonafide
+  - register_exam_form
+  - apply_scholarship_form
+  - request_paper_rechecking
+  - new_id-card
+  - Reporting
+
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Sanjivani College of Engineering \n Your input is uncertain please contact Student Section for Details."
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_transcript: [{ "text": "1. Write one Application to examination cell or head of examination cell.\n2. Then you will get the transcript in 2-3 days.\n3. To view a sample application for the examination cell, click [here](https://drive.google.com/file/d/1ExlMiLioInCj9x94QMcPVxEpSfesBF4R/view?usp=share_link)." } ]
+
+  utter_bonafide: [{  "text": "1. Give application to student section.\n2. Attach previous year result.\n3. Submit to student section.\n4. At the time of collecting bonifide, show your black I'd card and collect bonifide.\n5.To view a sample application for the student section, click [here](https://drive.google.com/file/d/1d7zWOV0DBwAdp1Ha0Eq6p-qXKnisOBCA/view?usp=share_link)." }]
+
+  utter_exam_form: [ { "text": "1. Complete the online form on the website, providing accurate information regarding your chosen subjects.\n2. Print a copy of the filled form.\n3. Obtain the Department stamp; this will be provided upon payment of the entire college fee.\n4. Submit the stamped form along with the required fee to the student section.\n5. Collect the official receipt as confirmation of your submission.\n\nFor more information and to access the online form, visit [ION](http://136.233.62.179/ionems_sce_student/login)." } ]
+
+
+
+  utter_scholarship_form: [
+    {
+        "text": "1. Create an account on Mahadbt for the scholarship application.\n2. Fill out the scholarship form on the website.\n3. Apply for the scholarship through the online portal.\n4. Print a copy of the filled application form.\n5. Attach the required documents to the printed form.\n6. Obtain the department stamp for authentication.\n7. Complete the verification process at the student section.\n8. If the form is correct, it will be submitted; otherwise, it will be rejected.\n9. In case of rejection, fill out the form again with the necessary corrections.\n\nThe documents that are essential for the application are listed below:\n  a. Domicile certificate.\n  b. Income certificate (provided by Tehsildar).\n  c. HSC and SSC certificates.\n  d. Aadhar Card or Enrollment Slip.\n  e. Fee receipt.\n  f. College bonafide certificate (showcasing that the candidate belongs to a particular educational institution).\n\nFor more information and to apply, visit [Mahadbt](https://mahadbt.maharashtra.gov.in).\n view the document required, click [here](https://drive.google.com/file/d/1n2qvbBkDfiGXvh9dDMquN7r7J-KS_ipr/view?usp=share_link)."
+    }
+]
+
+  utter_paper_rechecking:
+    - text: "1. Complete the rechecking form provided by the exam cell.\n2. Make the required payment for the rechecking process.\n3. Obtain a receipt as proof of payment.\n4. Submit the filled form along with the receipt.\n5. The exam cell will assign teachers to reevaluate the paper.\n6. After some days, the revised marks will be displayed.\n\nFor more information, visit [the college website](http://136.233.62.179/ionems_sce_student/login)."
+
+  utter_id: [{ "text": "1. Application to Head of Department\n2. Submit to the internet centre\n3. Verification\n4. Fill out the form provided by the internet centre\n5. After 2 to 3 days, collect the .\n6. To view a sample ID application form, click [here](https://drive.google.com/file/d/1WUbzKAZlfR3trlda0QOef0lpRFoW_tRi/view?usp=share_link)."}]
+
+  utter_reporting:
+  - text:
+      "
+      1.Take reporting Form from Mentor or Dept \n2.Fill it \n3.Summit to Mentor With Fees Receipt Copy \n4.It is an only offline processe "
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
